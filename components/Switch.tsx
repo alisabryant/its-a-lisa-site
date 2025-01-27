@@ -2,7 +2,7 @@ import * as React from "react";
 import {
   PlasmicSwitch,
   DefaultSwitchProps
-} from "./plasmic/theme/PlasmicSwitch";
+} from "./plasmic/its_a_lisa/PlasmicSwitch";
 
 import { SwitchRef } from "@plasmicapp/react-web";
 

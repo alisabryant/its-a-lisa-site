@@ -59,41 +59,20 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import LayoutDefault from "../../LayoutDefault"; // plasmic-import: 2O1wqIcghdK7/component
-import LayoutFooter from "../../LayoutFooter"; // plasmic-import: Z-CrKblPINiy/component
-import LayoutHeader from "../../LayoutHeader"; // plasmic-import: HBjN2PI6FOY_/component
-import SectionHome from "../../SectionHome"; // plasmic-import: J3uGcGomdDtw/component
+import Header from "../../Header"; // plasmic-import: HBjN2PI6FOY_/component
+import ContactButton from "../../ContactButton"; // plasmic-import: cAOyLxN62SOb/component
+import Footer from "../../Footer"; // plasmic-import: Z-CrKblPINiy/component
 
 import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: 0mo4e2K7LvGd/globalVariant
-import { ModeValue, useMode } from "../core/PlasmicGlobalVariant__Mode"; // plasmic-import: yBTVTgAz2Co9/globalVariant
-import { useScreenVariants as useScreenVariantsohEUf6Jd0EV8 } from "../core/PlasmicGlobalVariant__Screen"; // plasmic-import: OhEUf6Jd0eV8/globalVariant
+import { useScreenVariants as useScreenVariantsniKtHGeB1Opg } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: NIKtHGeB1opg/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_core_css from "../core/plasmic.module.css"; // plasmic-import: 3BHMWCYAenCmWb8ThbnzeF/projectcss
-import plasmic_semantic_css from "../semantic/plasmic.module.css"; // plasmic-import: dNqcW7FYVqnkjtbdVGjyS8/projectcss
-import plasmic_typography_css from "../typography/plasmic.module.css"; // plasmic-import: rs6Egi3bpxgrd3P2FjjZpt/projectcss
-import plasmic_theme_css from "../theme/plasmic.module.css"; // plasmic-import: 6eqm1KNiFrAWEs21Xh4t1D/projectcss
-import plasmic_button_css from "../button/plasmic.module.css"; // plasmic-import: 4JFyEcvXaxQ6TZ3SJQYzp6/projectcss
-import plasmic_switch_css from "../switch/plasmic.module.css"; // plasmic-import: i4n9AbVD4xq7VvHzvrVDh9/projectcss
-import plasmic_badge_css from "../badge/plasmic.module.css"; // plasmic-import: 6PoNur73nfoJqbzNtkNpAX/projectcss
-import plasmic_avatar_css from "../avatar/plasmic.module.css"; // plasmic-import: wjwfXMtbnYisAPU4bK5cC5/projectcss
-import plasmic_input_css from "../input/plasmic.module.css"; // plasmic-import: teUZ7d8BEHskoXuvEf1pBj/projectcss
-import plasmic_icon_css from "../icon/plasmic.module.css"; // plasmic-import: nVTL6BvP7Knk1RSNkBbJCm/projectcss
-import plasmic_menu_item_css from "../menu_item/plasmic.module.css"; // plasmic-import: 2ejMdvJDoJWjwd6DCNSCHJ/projectcss
-import plasmic_image_css from "../image/plasmic.module.css"; // plasmic-import: d4FLWyib3U2TEbmJ38D5i3/projectcss
-import plasmic_content_css from "../content/plasmic.module.css"; // plasmic-import: xpyP1X2yhd8ZY24SVBFr1E/projectcss
-import plasmic_headline_css from "../headline/plasmic.module.css"; // plasmic-import: gXd6w7L89NWPNeJmpaYS3W/projectcss
-import plasmic_sub_headline_css from "../sub_headline/plasmic.module.css"; // plasmic-import: 55QiaDppxCP7g9b2J75qMu/projectcss
-import plasmic_kicker_css from "../kicker/plasmic.module.css"; // plasmic-import: fBeERBQAnyanAaLZ4nhRvg/projectcss
-import plasmic_label_css from "../label/plasmic.module.css"; // plasmic-import: hNcAxYG8R1eSmuzeUeAQYf/projectcss
-import plasmic_link_css from "../link/plasmic.module.css"; // plasmic-import: 9cLG8PgSvqkoRbLtirXmUr/projectcss
-import plasmic_list_item_css from "../list_item/plasmic.module.css"; // plasmic-import: fKizj5juSSuZK31zh3BBJE/projectcss
-import plasmic_list_group_css from "../list_group/plasmic.module.css"; // plasmic-import: vdyuckzTfD3wQ2e6DnsVHo/projectcss
-import plasmic_card_css from "../card/plasmic.module.css"; // plasmic-import: sZLRCyi9YYe7t6BG9GcNjp/projectcss
-import plasmic_title_css from "../title/plasmic.module.css"; // plasmic-import: 77r5g6Swry3x5EDhnHGHyj/projectcss
 import projectcss from "./plasmic_its_a_lisa_site.module.css"; // plasmic-import: tt6TsnGtggzVZCRW2FQ8Vk/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: qAL5iQ50tsT6/css
+
+import CheckSvgIcon from "./icons/PlasmicIcon__CheckSvg"; // plasmic-import: huLMvL5wIXy1/icon
+import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: FYLMO-tZsz_5/icon
 
 createPlasmicElementProxy;
 
@@ -108,9 +87,13 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
-  layoutDefault?: Flex__<typeof LayoutDefault>;
-  layoutHeader?: Flex__<typeof LayoutHeader>;
-  sectionHome?: Flex__<typeof SectionHome>;
+  header?: Flex__<typeof Header>;
+  h1?: Flex__<"h1">;
+  h3?: Flex__<"h3">;
+  ul?: Flex__<"ul">;
+  li?: Flex__<"li">;
+  contactButton?: Flex__<typeof ContactButton>;
+  footer?: Flex__<typeof Footer>;
 };
 
 export interface DefaultHomepageProps {}
@@ -132,7 +115,16 @@ function PlasmicHomepage__RenderFunc(props: {
 }) {
   const { variants, overrides, forNode } = props;
 
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+        Object.fromEntries(
+          Object.entries(props.args).filter(([_, v]) => v !== undefined)
+        )
+      ),
+    [props.args]
+  );
 
   const $props = {
     ...args,
@@ -144,12 +136,9 @@ function PlasmicHomepage__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const currentUser = useCurrentUser?.() || {};
-
   const globalVariants = ensureGlobalVariants({
     theme: useTheme(),
-    mode: useMode(),
-    screen: useScreenVariantsohEUf6Jd0EV8()
+    screen: useScreenVariantsniKtHGeB1Opg()
   });
 
   return (
@@ -186,113 +175,273 @@ function PlasmicHomepage__RenderFunc(props: {
         }
       `}</style>
 
-      <div
-        data-plasmic-name={"root"}
-        data-plasmic-override={overrides.root}
-        data-plasmic-root={true}
-        data-plasmic-for-node={forNode}
-        className={classNames(
-          projectcss.all,
-          projectcss.root_reset,
-          projectcss.plasmic_default_styles,
-          projectcss.plasmic_mixins,
-          projectcss.plasmic_tokens,
-          plasmic_core_css.plasmic_tokens,
-          plasmic_semantic_css.plasmic_tokens,
-          plasmic_typography_css.plasmic_tokens,
-          plasmic_theme_css.plasmic_tokens,
-          plasmic_button_css.plasmic_tokens,
-          plasmic_switch_css.plasmic_tokens,
-          plasmic_badge_css.plasmic_tokens,
-          plasmic_avatar_css.plasmic_tokens,
-          plasmic_input_css.plasmic_tokens,
-          plasmic_icon_css.plasmic_tokens,
-          plasmic_menu_item_css.plasmic_tokens,
-          plasmic_image_css.plasmic_tokens,
-          plasmic_content_css.plasmic_tokens,
-          plasmic_headline_css.plasmic_tokens,
-          plasmic_sub_headline_css.plasmic_tokens,
-          plasmic_kicker_css.plasmic_tokens,
-          plasmic_label_css.plasmic_tokens,
-          plasmic_link_css.plasmic_tokens,
-          plasmic_list_item_css.plasmic_tokens,
-          plasmic_list_group_css.plasmic_tokens,
-          plasmic_card_css.plasmic_tokens,
-          plasmic_title_css.plasmic_tokens,
-          sty.root,
-          {
-            [plasmic_core_css.global_mode_dark]: hasVariant(
-              globalVariants,
-              "mode",
-              "dark"
-            ),
-            [sty.rootglobal_mode_dark]: hasVariant(
-              globalVariants,
-              "mode",
-              "dark"
-            ),
-            [sty.rootglobal_theme_dark]: hasVariant(
-              globalVariants,
-              "theme",
-              "dark"
-            )
-          }
-        )}
-      >
-        <LayoutDefault
-          data-plasmic-name={"layoutDefault"}
-          data-plasmic-override={overrides.layoutDefault}
-          className={classNames("__wab_instance", sty.layoutDefault, {
-            [sty.layoutDefaultglobal_mode_dark]: hasVariant(
-              globalVariants,
-              "mode",
-              "dark"
-            ),
-            [sty.layoutDefaultglobal_theme_dark]: hasVariant(
-              globalVariants,
-              "theme",
-              "dark"
-            )
-          })}
-          slot2={
-            <LayoutHeader
-              data-plasmic-name={"layoutHeader"}
-              data-plasmic-override={overrides.layoutHeader}
-              className={classNames("__wab_instance", sty.layoutHeader, {
-                [sty.layoutHeaderglobal_mode_dark]: hasVariant(
+      <div className={projectcss.plasmic_page_wrapper}>
+        <div
+          data-plasmic-name={"root"}
+          data-plasmic-override={overrides.root}
+          data-plasmic-root={true}
+          data-plasmic-for-node={forNode}
+          className={classNames(
+            projectcss.all,
+            projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
+            sty.root,
+            {
+              [projectcss.global_theme_dark]: hasVariant(
+                globalVariants,
+                "theme",
+                "dark"
+              ),
+              [sty.rootglobal_theme_dark]: hasVariant(
+                globalVariants,
+                "theme",
+                "dark"
+              )
+            }
+          )}
+        >
+          <div className={classNames(projectcss.all, sty.freeBox__nmlBj)}>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__yZa0B, {
+                [sty.freeBoxglobal_theme_dark__yZa0B6Jr2E]: hasVariant(
                   globalVariants,
-                  "mode",
+                  "theme",
                   "dark"
                 )
               })}
-            />
-          }
-        >
-          <SectionHome
-            data-plasmic-name={"sectionHome"}
-            data-plasmic-override={overrides.sectionHome}
-            className={classNames("__wab_instance", sty.sectionHome)}
-          />
-        </LayoutDefault>
+            >
+              <Header
+                data-plasmic-name={"header"}
+                data-plasmic-override={overrides.header}
+                className={classNames("__wab_instance", sty.header, {
+                  [sty.headerglobal_theme_dark]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "dark"
+                  )
+                })}
+              />
+            </Stack__>
+            <div className={classNames(projectcss.all, sty.freeBox__qT13E)}>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__en1Ah)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__qaSdC)}
+                >
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__jJktB)}
+                  >
+                    <h1
+                      data-plasmic-name={"h1"}
+                      data-plasmic-override={overrides.h1}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1
+                      )}
+                    >
+                      {"Its A-Lisa"}
+                    </h1>
+                    <h3
+                      data-plasmic-name={"h3"}
+                      data-plasmic-override={overrides.h3}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.__wab_text,
+                        sty.h3
+                      )}
+                    >
+                      {'"Vivid Facade\nDiverse Layers\nSparkling Aura"'}
+                    </h3>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__i86Tk
+                      )}
+                    >
+                      <React.Fragment>
+                        <React.Fragment>{""}</React.Fragment>
+                        {
+                          <ul
+                            data-plasmic-name={"ul"}
+                            data-plasmic-override={overrides.ul}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.ul,
+                              sty.ul
+                            )}
+                          >
+                            <li
+                              data-plasmic-name={"li"}
+                              data-plasmic-override={overrides.li}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.li,
+                                projectcss.__wab_text,
+                                sty.li
+                              )}
+                            >
+                              {"expert testimonial from an AI Chatbot"}
+                            </li>
+                          </ul>
+                        }
+                        <React.Fragment>{""}</React.Fragment>
+                      </React.Fragment>
+                    </div>
+                  </Stack__>
+                </Stack__>
+                <div className={classNames(projectcss.all, sty.freeBox__u9Od3)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__oaV9N)}
+                  />
+                </div>
+              </Stack__>
+            </div>
+          </div>
+          <Stack__
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox___92BGj, {
+              [sty.freeBoxglobal_theme_dark___92BGj6Jr2E]: hasVariant(
+                globalVariants,
+                "theme",
+                "dark"
+              )
+            })}
+          >
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__vfam0)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__ya4T2,
+                  {
+                    [sty.textglobal_theme_dark__ya4T26Jr2E]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "dark"
+                    )
+                  }
+                )}
+              >
+                {"Sassy, classy, and a tad bad-assy"}
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___9G6Ev,
+                  {
+                    [sty.textglobal_theme_dark___9G6Ev6Jr2E]: hasVariant(
+                      globalVariants,
+                      "theme",
+                      "dark"
+                    )
+                  }
+                )}
+              >
+                {"Living my life the best I can"}
+              </div>
+              <ContactButton
+                data-plasmic-name={"contactButton"}
+                data-plasmic-override={overrides.contactButton}
+                className={classNames("__wab_instance", sty.contactButton)}
+                endIcon={
+                  <Icon38Icon
+                    className={classNames(projectcss.all, sty.svg__uXnbu)}
+                    role={"img"}
+                  />
+                }
+                startIcon={
+                  <CheckSvgIcon
+                    className={classNames(projectcss.all, sty.svg__kKb21)}
+                    role={"img"}
+                  />
+                }
+                submitsForm={true}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__xjUoR
+                  )}
+                >
+                  {"Get to know me"}
+                </div>
+              </ContactButton>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__gwDtr
+                )}
+              >
+                {"This site was made possible by James"}
+              </div>
+            </Stack__>
+            <div
+              className={classNames(projectcss.all, sty.freeBox__uCaoi, {
+                [sty.freeBoxglobal_theme_dark__uCaoi6Jr2E]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "dark"
+                )
+              })}
+            >
+              <Footer
+                data-plasmic-name={"footer"}
+                data-plasmic-override={overrides.footer}
+                className={classNames("__wab_instance", sty.footer)}
+              />
+            </div>
+          </Stack__>
+        </div>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "layoutDefault", "layoutHeader", "sectionHome"],
-  layoutDefault: ["layoutDefault", "layoutHeader", "sectionHome"],
-  layoutHeader: ["layoutHeader"],
-  sectionHome: ["sectionHome"]
+  root: ["root", "header", "h1", "h3", "ul", "li", "contactButton", "footer"],
+  header: ["header"],
+  h1: ["h1"],
+  h3: ["h3"],
+  ul: ["ul", "li"],
+  li: ["li"],
+  contactButton: ["contactButton"],
+  footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  layoutDefault: typeof LayoutDefault;
-  layoutHeader: typeof LayoutHeader;
-  sectionHome: typeof SectionHome;
+  header: typeof Header;
+  h1: "h1";
+  h3: "h3";
+  ul: "ul";
+  li: "li";
+  contactButton: typeof ContactButton;
+  footer: typeof Footer;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -355,9 +504,13 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    layoutDefault: makeNodeComponent("layoutDefault"),
-    layoutHeader: makeNodeComponent("layoutHeader"),
-    sectionHome: makeNodeComponent("sectionHome"),
+    header: makeNodeComponent("header"),
+    h1: makeNodeComponent("h1"),
+    h3: makeNodeComponent("h3"),
+    ul: makeNodeComponent("ul"),
+    li: makeNodeComponent("li"),
+    contactButton: makeNodeComponent("contactButton"),
+    footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

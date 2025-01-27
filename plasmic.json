@@ -24,7 +24,7 @@
     {
       "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
       "projectApiToken": "XwlGfnzf5pSaCEWMq8JJqFZnNroKSO3Q2HDfENrcFust1uRlfrY8FOq1tdd5yTatY1gE19rHbcKGuSsBdsA",
-      "projectName": "its_a-lisa site",
+      "projectName": "Its A Lisa",
       "version": "latest",
       "cssFilePath": "plasmic/its_a_lisa_site/plasmic_its_a_lisa_site.module.css",
       "components": [
@@ -43,246 +43,72 @@
           "path": "/"
         },
         {
-          "id": "HBjN2PI6FOY_",
-          "name": "LayoutHeader",
+          "id": "cAOyLxN62SOb",
+          "name": "ContactButton",
           "type": "managed",
           "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicLayoutHeader.tsx",
+          "renderModuleFilePath": "plasmic/its_a_lisa/PlasmicContactButton.tsx",
           "importSpec": {
-            "modulePath": "LayoutHeader.tsx"
+            "modulePath": "ContactButton.tsx"
           },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicLayoutHeader.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "Z-CrKblPINiy",
-          "name": "LayoutFooter",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicLayoutFooter.tsx",
-          "importSpec": {
-            "modulePath": "LayoutFooter.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicLayoutFooter.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "08tV0C4XRgYQ",
-          "name": "CompSwitch",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicCompSwitch.tsx",
-          "importSpec": {
-            "modulePath": "CompSwitch.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicCompSwitch.module.css",
-          "scheme": "blackbox",
-          "componentType": "component",
-          "plumeType": "switch"
-        },
-        {
-          "id": "2O1wqIcghdK7",
-          "name": "LayoutDefault",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicLayoutDefault.tsx",
-          "importSpec": {
-            "modulePath": "LayoutDefault.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicLayoutDefault.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "DN4o2sVmLikj",
-          "name": "PatternFeature",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicPatternFeature.tsx",
-          "importSpec": {
-            "modulePath": "PatternFeature.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicPatternFeature.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "hOjYiBDjTmoS",
-          "name": "CompButton",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicCompButton.tsx",
-          "importSpec": {
-            "modulePath": "CompButton.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicCompButton.module.css",
+          "cssFilePath": "plasmic/its_a_lisa/PlasmicContactButton.module.css",
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
         },
         {
-          "id": "B03NGXvvjbKJ",
-          "name": "Bio",
+          "id": "HBjN2PI6FOY_",
+          "name": "Header",
           "type": "managed",
           "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicBio.tsx",
+          "renderModuleFilePath": "plasmic/its_a_lisa/PlasmicHeader.tsx",
           "importSpec": {
-            "modulePath": "../pages/bio.tsx"
+            "modulePath": "Header.tsx"
           },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicBio.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/bio"
-        },
-        {
-          "id": "WISjHA9eVpho",
-          "name": "Resume",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicResume.tsx",
-          "importSpec": {
-            "modulePath": "../pages/resume.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicResume.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/resume"
-        },
-        {
-          "id": "sEa7wbl9tcjK",
-          "name": "SectionResume",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicSectionResume.tsx",
-          "importSpec": {
-            "modulePath": "SectionResume.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicSectionResume.module.css",
+          "cssFilePath": "plasmic/its_a_lisa/PlasmicHeader.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
         {
-          "id": "zEoukrSG93mi",
-          "name": "About",
+          "id": "Z-CrKblPINiy",
+          "name": "Footer",
           "type": "managed",
           "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicAbout.tsx",
+          "renderModuleFilePath": "plasmic/its_a_lisa/PlasmicFooter.tsx",
           "importSpec": {
-            "modulePath": "../pages/about.tsx"
+            "modulePath": "Footer.tsx"
           },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicAbout.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/about"
-        },
-        {
-          "id": "qGPOjREOYOzh",
-          "name": "CompSeparator",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicCompSeparator.tsx",
-          "importSpec": {
-            "modulePath": "CompSeparator.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicCompSeparator.module.css",
+          "cssFilePath": "plasmic/its_a_lisa/PlasmicFooter.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
         {
-          "id": "Lmee0q1Olv9R",
-          "name": "PatternProfileCard",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicPatternProfileCard.tsx",
-          "importSpec": {
-            "modulePath": "PatternProfileCard.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicPatternProfileCard.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "4pJ51SAsGEFM",
-          "name": "PatternCard",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicPatternCard.tsx",
-          "importSpec": {
-            "modulePath": "PatternCard.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicPatternCard.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "J3uGcGomdDtw",
-          "name": "SectionHome",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicSectionHome.tsx",
-          "importSpec": {
-            "modulePath": "SectionHome.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicSectionHome.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "E0Dd0yvWtdY0",
-          "name": "UnderConstruction",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicUnderConstruction.tsx",
-          "importSpec": {
-            "modulePath": "UnderConstruction.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicUnderConstruction.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "eq7pKZGIMMAm",
-          "name": "Resources",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicResources.tsx",
-          "importSpec": {
-            "modulePath": "../pages/resources.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicResources.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/resources"
-        },
-        {
-          "id": "-6t-7uDP1mrB",
-          "name": "Blog",
-          "type": "managed",
-          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicBlog.tsx",
-          "importSpec": {
-            "modulePath": "../pages/blog.tsx"
-          },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicBlog.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/blog"
-        },
-        {
-          "id": "2p5hN_gOCR_C",
+          "id": "jPkpcXf9p4tS",
           "name": "Projects",
           "type": "managed",
           "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
-          "renderModuleFilePath": "plasmic/its_a_lisa_site/PlasmicProjects.tsx",
+          "renderModuleFilePath": "plasmic/its_a_lisa/PlasmicProjects.tsx",
           "importSpec": {
             "modulePath": "../pages/projects.tsx"
           },
-          "cssFilePath": "plasmic/its_a_lisa_site/PlasmicProjects.module.css",
+          "cssFilePath": "plasmic/its_a_lisa/PlasmicProjects.module.css",
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/projects"
+        },
+        {
+          "id": "08tV0C4XRgYQ",
+          "name": "Switch",
+          "type": "managed",
+          "projectId": "tt6TsnGtggzVZCRW2FQ8Vk",
+          "renderModuleFilePath": "plasmic/its_a_lisa/PlasmicSwitch.tsx",
+          "importSpec": {
+            "modulePath": "Switch.tsx"
+          },
+          "cssFilePath": "plasmic/its_a_lisa/PlasmicSwitch.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "switch"
         }
       ],
       "icons": [
@@ -333,8 +159,8 @@
         },
         {
           "id": "huLMvL5wIXy1",
-          "name": "ChecksvgIcon",
-          "moduleFilePath": "plasmic/its_a_lisa_site/icons/PlasmicIcon__Checksvg.tsx"
+          "name": "CheckSvgIcon",
+          "moduleFilePath": "plasmic/its_a_lisa_site/icons/PlasmicIcon__CheckSvg.tsx"
         },
         {
           "id": "FYLMO-tZsz_5",
@@ -355,11 +181,6 @@
           "id": "6FuUhrFEU7RO",
           "name": "Icon23Icon",
           "moduleFilePath": "plasmic/its_a_lisa_site/icons/PlasmicIcon__Icon23.tsx"
-        },
-        {
-          "id": "kqxi-583CvZY",
-          "name": "Icon24Icon",
-          "moduleFilePath": "plasmic/its_a_lisa_site/icons/PlasmicIcon__Icon24.tsx"
         }
       ],
       "images": [
@@ -376,12 +197,12 @@
         {
           "id": "-s3B_X700ohZ",
           "name": "div.map-image",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/divmapImage.png"
+          "filePath": "../public/plasmic/its_a_lisa_site/images/divMapImage.png"
         },
         {
           "id": "SXdpaIgtpvZE",
           "name": "ab-img.png",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/abImgpng.png"
+          "filePath": "../public/plasmic/its_a_lisa_site/images/abImgPng.png"
         },
         {
           "id": "W8W92T7_X9Zs",
@@ -431,7 +252,7 @@
         {
           "id": "v_95WVKhVZBu",
           "name": "hero.png",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/heropng.png"
+          "filePath": "../public/plasmic/its_a_lisa_site/images/heroPng.png"
         },
         {
           "id": "d3G5dM-UjArP",
@@ -562,111 +383,6 @@
           "id": "cAn2qEWh7HXF",
           "name": "juegodynamics_very_detailed_fantasy_map_surface_of_a_gas_giant__fe8ce9ce-b690-40f6-8dbc-2b5248121379.png",
           "filePath": "../public/plasmic/its_a_lisa_site/images/juegodynamicsVeryDetailedFantasyMapSurfaceOfAGasGiantFe8Ce9CeB69040F68Dbc2B5248121379Png.png"
-        },
-        {
-          "id": "1ly_aJBdI4TR",
-          "name": "image 2",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image2.png"
-        },
-        {
-          "id": "652EtxIUDGfq",
-          "name": "image 3",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image3.png"
-        },
-        {
-          "id": "vyAVayHB5k8a",
-          "name": "image 4",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image4.svg"
-        },
-        {
-          "id": "OwMWtRUTNkoO",
-          "name": "image 5",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image5.svg"
-        },
-        {
-          "id": "kGO9t39cRFq4",
-          "name": "image 6",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image6.svg"
-        },
-        {
-          "id": "yXIk8ZMMPAnY",
-          "name": "image 7",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image7.svg"
-        },
-        {
-          "id": "6Zqja5W8flML",
-          "name": "image 8",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image8.svg"
-        },
-        {
-          "id": "zmueITEaXyRv",
-          "name": "image 9",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image9.svg"
-        },
-        {
-          "id": "QAFpijKOL9IU",
-          "name": "image 10",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image10.svg"
-        },
-        {
-          "id": "AdscJ9K6dKIr",
-          "name": "image 11",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image11.png"
-        },
-        {
-          "id": "iZ6F4Ioingtc",
-          "name": "image 12",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image12.png"
-        },
-        {
-          "id": "LNa78xiVGrtS",
-          "name": "image 13",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image13.png"
-        },
-        {
-          "id": "BkZGwrkLx7I_",
-          "name": "image 14",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image14.png"
-        },
-        {
-          "id": "89YUeUcd2HEg",
-          "name": "image 15",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image15.png"
-        },
-        {
-          "id": "3GYcufP8K9Kw",
-          "name": "image 16",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image16.png"
-        },
-        {
-          "id": "2NZwRseMT39n",
-          "name": "image 17",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image17.png"
-        },
-        {
-          "id": "enNLrQWY5WeD",
-          "name": "image 18",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image18.svg"
-        },
-        {
-          "id": "6sGjNwM1oMFQ",
-          "name": "image 19",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image19.svg"
-        },
-        {
-          "id": "KVp58noKZ2lc",
-          "name": "image 20",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image20.svg"
-        },
-        {
-          "id": "a_o2oNwXqNf7",
-          "name": "image 21",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/image21.svg"
-        },
-        {
-          "id": "8fcwMVgujt-f",
-          "name": "P2.jpg",
-          "filePath": "../public/plasmic/its_a_lisa_site/images/p2Jpg.jpg"
         }
       ],
       "indirect": false,
@@ -3972,6 +3688,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.330",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.330/dist/plasmic.schema.json"
+  "cliVersion": "0.1.335",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.335/dist/plasmic.schema.json"
 }

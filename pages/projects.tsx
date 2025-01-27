@@ -3,9 +3,8 @@
 import * as React from "react";
 import { PageParamsProvider as PageParamsProvider__ } from "@plasmicapp/react-web/lib/host";
 
-import { ScreenVariantProvider } from "../components/plasmic/its_a_lisa_site/PlasmicGlobalVariant__Screen";
 import { ThemeContext } from "../components/plasmic/its_a_lisa_site/PlasmicGlobalVariant__Theme";
-import { PlasmicProjects } from "../components/plasmic/its_a_lisa_site/PlasmicProjects";
+import { PlasmicProjects } from "../components/plasmic/its_a_lisa/PlasmicProjects";
 import { useRouter } from "next/router";
 
 function Projects() {
@@ -25,6 +24,7 @@ function Projects() {
   // variant context providers. These wrappers may be moved to
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
+
   return (
     <ThemeContext.Provider value={undefined}>
       <PageParamsProvider__
