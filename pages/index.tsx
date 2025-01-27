@@ -3,7 +3,8 @@
 import * as React from "react";
 import * as ph from "@plasmicapp/react-web/lib/host";
 
-import { ScreenVariantProvider } from "../components/plasmic/its_a_lisa_site/PlasmicGlobalVariant__Screen";
+// import { ScreenVariantProvider } from "../components/plasmic/its_a_lisa_site/PlasmicGlobalVariant__Screen";
+import ScreenVariantProvider from "../components/plasmic/its_a_lisa_site/PlasmicGlobalVariant__Screen";
 import { PlasmicHomepage } from "../components/plasmic/its_a_lisa_site/PlasmicHomepage";
 import { useRouter } from "next/router";
 
